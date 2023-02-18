@@ -32,6 +32,7 @@ body {
 
 .input {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .input__input-field {
@@ -66,7 +67,7 @@ body {
     
 }
 
-.task__btn-delete, .task__btn-edit {
+.task__btn-delete, .task__btn-done {
     font-size: 18px;
 }
 
@@ -84,8 +85,8 @@ body {
     background: #ff8181;;
 }
 
-.task__btn-edit {
-    width: 50px;
+.task__btn-done {
+    width: 60px;
     height: 30px;
     border: solid yellow;
     background-color: #c28282;
@@ -94,12 +95,19 @@ body {
     
 }
 
-.task__btn-edit:hover:not(:active) {
+.task__btn-done:hover:not(:active) {
     background: #9b931f;;
 }
 
 .task__text {
    max-width: 325px;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 15px;
+}
+
+.task__text-cross-out {
+    max-width: 325px;
+    font-size: 20px;
+    margin-left: 15px;
+    text-decoration: line-through;
 }
