@@ -9,7 +9,6 @@ addBtnNode.addEventListener('click', () => {
 const createHthlCod = function () {
     let inputFieldText = '';
     inputFieldText += inputFieldNode.value;
-    console.log(inputFieldText)
 
     const taskTag = document.createElement('div');
     taskTag.className = 'task';
@@ -37,7 +36,6 @@ const createHthlCod = function () {
     buttonDoneTag.addEventListener('click', () => {
         const classP = 'task__text-cross-out';
         const classPCrossOut = 'task__text';
-        console.log(paragraphTag.className)
         if (paragraphTag.classList.value == classPCrossOut) {
             paragraphTag.classList.remove(classPCrossOut);
             paragraphTag.classList.add(classP);
@@ -47,16 +45,3 @@ const createHthlCod = function () {
         };
     });
 };
-
-// todoListNode.className
-// console.log(todoListNode.className)
-
-
-
-
-
-// if (buttonDeleteTag != 0) {
-//     deleteBtnNode.addEventListener('click', () => {
-//             return console.log(1)
-//         });
-// };
