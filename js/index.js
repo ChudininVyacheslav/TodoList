@@ -29,8 +29,11 @@ const createHthlCod = function () {
     paragraphTag.innerText = inputFieldText;
     taskTag.appendChild(paragraphTag);
 
+    inputFieldNode.value = '';
+
     buttonDeleteTag.addEventListener('click', () => {
         todoListNode.removeChild(taskTag, buttonDeleteTag, buttonDoneTag, paragraphTag);
+        
     });
 
     buttonDoneTag.addEventListener('click', () => {
